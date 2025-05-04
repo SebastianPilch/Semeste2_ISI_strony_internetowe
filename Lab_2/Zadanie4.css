@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --column-max-width: 300px;
+}
+html
+{
+    height: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+    grid-template-areas:
+    "header"
+    "Navigation"
+    "main"
+    "sidebar"
+    "Ads"
+    "footer";
+    grid-auto-rows: min-content;
+    height: 100%;
+}
+
+body > * {
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    background-color: bisque;
+    border: 2px solid black;
+    grid-area: header;
+}
+.header__logo {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 8px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.Navigation
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: bisque;
+    border: 2px solid black;
+    grid-area: Navigation
+
+}
+
+.Navigation__links {
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.Navigation__anchor {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.1s ease-in-out;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+
+.footer
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: bisque;
+    border: 2px solid black;
+    grid-area: footer;
+}
+
+/*.content_area {*/
+/*    width: 100%;*/
+/*    height: 70vh;*/
+/*    flex: 1;*/
+/*    display: grid;*/
+/*    grid-template-areas:*/
+/*        "Ads"*/
+/*        "main"*/
+/*        "sidebar";*/
+/*    grid-template-rows: min-content minmax(0, 1fr) min-content;*/
+/*}*/
+.ad_container
+{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.exaple_ad
+{
+    height: 30%;
+    width: 76%;
+    background-color: #b4ab98;
+    border-radius: 4px;
+}
+.Ads__header
+{
+    text-align: center;
+    display: block;
+}
+
+
+
+.profile
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile__photo
+{
+    max-width: 100px;
+    width: 100%;
+    border-radius: 100%;
+    margin-bottom: 16px;
+
+}
+.profile__links
+{
+    display: flex;
+    gap: 8px;
+}
+
+.profile__singlelink
+{
+    text-decoration: none;
+    transition: opacity 0.1s ease-in;
+}
+.profile__singlelink:hover
+{
+    opacity: 0.5;
+}
+
+.profile__images
+{
+  width: 32px;
+  height: 32px;
+}
+
+
+.Ads {
+  grid-area: Ads;
+}
+
+.main {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    grid-area: main;
+
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content_container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-items: center;
+}
+
+.content_object{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 24px 64px 24px 32px;
+    border-radius: 100px;
+    width: 95%;
+    align-items: center;
+}
+
+.content_object__img {
+  align-self: center;
+  border-radius: 100%;
+}
+
+.content_object__header {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.content_object__text {
+  line-height: 1.5;
+}
+
+.send_mail {
+    width: 95%;
+    margin-top: 32px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    background: url("./kraj.jpg")
+        no-repeat center center;
+    background-size: cover;
+    font-size: 32px;
+
+
+}
+.send_mail__wrapper {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    width: 95%;
+    padding: 24px;
+    padding-right: 128px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+}
+
+
+.send_mail__title {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: -webkit-linear-gradient(left, #5b430c, #a46214);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-self: start;
+}
+
+.send_mail__options input[type="radio"] {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.send_mail__submit {
+  all: unset;
+  display: block;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 9999px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  background-image: linear-gradient(to right, #5d3f17, #a46214);
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.send_mail__submit:hover {
+  filter: brightness(1.2);
+}
+
+
+.send_mail__input {
+  font-size: 32px;
+  all: unset;
+  background-color: white;
+  padding: 12px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.send_mail input[type="radio"] {
+  accent-color: #a46214;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px)
+{
+    body {
+        grid-template-areas:
+      "header header"
+      "Navigation Navigation"
+      "sidebar main"
+      "Ads footer";
+        grid-template-columns: var(--column-max-width) 1fr;
+    }
+    .profile {
+        position: sticky;
+        top: 16px;
+    }
+
+    .profile__photo {
+        max-width: 80%;
+    }
+
+    .send_mail__wrapper {
+        max-width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 1200px)
+{
+    body {
+        grid-template-areas:
+      "header header header"
+      "sidebar Navigation Ads"
+      "sidebar main Ads"
+      "footer footer footer";
+        grid-template-columns: var(--column-max-width) 1fr var(--column-max-width);
+    }
+
+  .content_object {
+    gap: 24px;
+    flex-direction: row;
+  }
+
+  .exaple_ad {
+    max-height: unset;
+  }
+
+}

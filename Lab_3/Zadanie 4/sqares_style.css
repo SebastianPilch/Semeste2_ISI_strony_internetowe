@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  gap: 16px;
+
+}
+
+.squares {
+  border: 1px solid black;
+  font-size: 20px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+
+.squares div {
+  padding: 16px;
+  cursor: pointer;
+}
+
+.squares div[data-disabled='true'] {
+  background-color: gray;
+}
+
+.square_1 {
+  height: 100%;
+  background-color: #cdd3cf;
+}
+
+.square_2 {
+  background-color: #b72929;
+  height: 80%;
+}
+
+.square_3 {
+  height: 80%;
+  background-color: #e5e53e;
+}
+
+.Counter-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edycja obrazu</title>
+    <link rel="stylesheet" href="./zad_5.css" />
+    <script src="./zad_5.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <canvas class = "js-canvas" width = "800" height = "450"></canvas>
+        </div>
+        <div class="buttons">
+            <label for="filter"> Kolor filtru </label>
+            <input id="filter" type="color" class="js-filter">
+            <button class="js-add-filter">Dodaj kolor</button>
+
+            <label for="mask"> Kolor maski</label>
+            <input id="mask" type="color" class="js-mask">
+            <button class="js-add-mask">Nałóż maskę</button>
+
+            <button class="js-frame">Wytnij fragment</button>
+            <button class="js-backup">Resetuj</button>
+
+            <div class="position-display">
+                <p>Ostatnia pozycja kursora:</p>
+                <p>X: <span id="last-x">0</span></p>
+                <p>Y: <span id="last-y">0</span></p>
+            </div>
+      </div>
+    </div>
+</body>
+</html>

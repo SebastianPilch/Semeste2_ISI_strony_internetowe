@@ -1,0 +1,115 @@
+{
+  "categories": [
+    {
+      "category": "Samochody",
+      "products": [
+        {
+          "name": "Fiat",
+          "brand": "Fiat",
+          "model": "500"
+        },
+        {
+          "name": "BMW",
+          "brand": "BMW",
+          "model": "X5"
+        }
+      ]
+    },
+    {
+      "category": "S�odycze",
+      "products": [
+        {
+          "name": "Czekolada",
+          "brand": "Wedel"
+        },
+        {
+          "name": "Cukierki",
+          "brand": "Wawel"
+        },
+        {
+          "name": "Baton",
+          "brand": "Mars"
+        },
+        {
+          "name": "Gumy",
+          "brand": "Orbit"
+        },
+        {
+          "name": "�elki",
+          "brand": "Haribo"
+        }
+      ]
+    },
+    {
+      "category": "Elektronika",
+      "products": [
+        {
+          "name": "Laptop",
+          "brand": "Dell",
+          "model": "XPS 13"
+        },
+        {
+          "name": "Smartphone",
+          "brand": "Apple",
+          "model": "iPhone 13"
+        },
+        {
+          "name": "Tablet",
+          "brand": "Samsung",
+          "model": "Galaxy Tab S7"
+        },
+        {
+          "name": "Smartwatch",
+          "brand": "Apple",
+          "model": "Apple Watch"
+        }
+      ]
+    },
+    {
+      "category": "Odzie�",
+      "products": [
+        {
+          "name": "Jeansy",
+          "brand": "Levi's"
+        },
+        {
+          "name": "T-shirt",
+          "brand": "H&M"
+        },
+        {
+          "name": "Sweter",
+          "brand": "Zara"
+        },
+        {
+          "name": "Kurtka",
+          "brand": "North Face"
+        },
+        {
+          "name": "Buty",
+          "brand": "Nike"
+        }
+      ]
+    },
+    {
+      "category": "Napoje",
+      "products": [
+        {
+          "name": "Cola",
+          "brand": "CocaCola"
+        },
+        {
+          "name": "Pepsi",
+          "brand": "PepsiCo"
+        },
+        {
+          "name": "Sok",
+          "brand": "Kubu�"
+        },
+        {
+          "name": "Woda",
+          "brand": "Evian"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+#menu h2, #main-panel h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu-list li {
+    margin: 5px 0;
+    display: block;
+    align-items: center;
+}
+
+#menu-list label {
+    cursor: pointer;
+}
+
+#menu-list input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.product-list {
+    display: none; /* Domyślnie ukrywamy listę produktów */
+    margin-left: 20px;
+}
+
+.show {
+    display: block; /* Wyświetlamy listę produktów tylko po rozwinięciu */
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.rotated {
+    transform: rotate(90deg); /* Obracamy ikonę strzałki po rozwinięciu */
+}
+
+#content {
+    font-size: 16px;
+    color: #333;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu z JSON</title>
+    <link rel="stylesheet" href="json_loader.css">
+</head>
+<body>
+    <div class="container">
+        <aside id="menu">
+            <h2>Sekcja Menu</h2>
+            <ul id="menu-list"></ul>
+            <script src="json_loader.js">
+                window.addEventListener('load', function() {
+                loadMenu();
+            });
+            </script>
+        </aside>
+
+        <main id="main-panel">
+            <h2>Sekcja główna</h2>
+            <div id="content"></div>
+            <script src="json_loader.js">
+                window.addEventListener('load', function() {
+                showSelectedProducts();
+            });
+            </script>
+        </main>
+    </div>
+
+    <script src="json_loader.js"></script>
+</body>
+</html>

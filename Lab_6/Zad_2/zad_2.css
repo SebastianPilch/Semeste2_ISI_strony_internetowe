@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.list {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  width: 200px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 64px;
+}
+
+.list-item {
+  background-color: white;
+  padding: 10px;
+  cursor: move;
+  text-align: center;
+}
+
+.list-item.js-dragging {
+  opacity: 0.4;
+}

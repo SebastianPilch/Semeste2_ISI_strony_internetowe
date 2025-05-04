@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista zadań</title>
+    <script src="./zad_4.js" defer></script>
+    <link rel="stylesheet" href="./zad_4.css" />
+  </head>
+  <body>
+    <form class="newlabel js-form">
+      <div class="newlabel-control">
+        <label for="task">Dodaj zadanie</label>
+        <input id="task" name="task" type="text" placeholder="Nazwa" />
+      </div>
+      <input type="submit" value="Dodaj" />
+    </form>
+    <div class="columns">
+      <div class="column">
+        <b>Do Zrobienia</b>
+        <ul id="todo-list" class="list js-list">
+          <li id="item-1" class="list-label js-label" draggable="true">
+            <span>Zrobić zakupy</span>
+          </li>
+          <li id="item-2" class="list-label js-label" draggable="true">
+            <span >Posprzątać</span>
+          </li>
+        </ul>
+      </div>
+      <div class="column">
+        <b>Zrobione</b>
+        <ul id="done-list" class="list js-list">
+          <li id="item-4" class="list-label js-label" draggable="true">
+            <span class="strikethrough">Wynieść śmieci</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

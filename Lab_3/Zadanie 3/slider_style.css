@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #d7d9e0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  color: #0b2d48;
+}
+
+.slider {
+  position: relative;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.slider__elements {
+  --current-slide: 0;
+  display: flex;
+  transform: translate3d(calc(var(--current-slide) * -100%), 0, 0);
+  transition: transform 0.7s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  font-size: 25px;
+}
+
+.profile_photo {
+  width: 175px;
+  height: 175px;
+  border-radius: 9999px;
+  border: 4px solid black;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 16px;
+}
+
+.profile__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.profile__name {
+  color: #49a6e9;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.profile__job {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.profile__description {
+  margin: 0;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.slider__buttons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  right: 16px;
+  pointer-events: none;
+}
+
+.slider__button {
+  all: unset;
+  display: grid;
+  place-items: center;
+  background-color: #5f7e9c;
+  width: 64px;
+  height: 100px;
+  border-radius: 16px;
+  cursor: pointer;
+  pointer-events: all;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.slider__button:hover {
+  opacity: 0.8;
+}
+
+.slider__button-right {
+  transform-origin: center center;
+  transform: rotate(180deg);
+}
+
+.slider__button-arrow {
+  width: 45px;
+  height: 45px;
+}
+
+
+.random-worker {
+  all: unset;
+  display: flex;
+  background-color: #5f7e9c;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: white;
+  padding: 16px;
+  border-radius: 16px;
+  transition: opacity 0.2s ease-in;
+}
+
+.random-worker:hover {
+  opacity: 0.8;
+}
+
+.random-worker svg {
+  width: 40px;
+  height: 40px;
+}
